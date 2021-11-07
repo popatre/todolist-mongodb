@@ -11,7 +11,7 @@ app.use(express.static("public"));
 const password = process.env.password;
 
 mongoose.connect(
-    "mongodb+srv://jmcguire:password@cluster0.ytwqw.mongodb.net/todolistdb"
+    "mongodb+srv://jmcguire:`${password}`@cluster0.ytwqw.mongodb.net/todolistdb"
 );
 
 const itemsSchema = {
