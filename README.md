@@ -24,3 +24,23 @@ To create a new list, add a '/' followed by your new list name, in the url. e.g.
 This will create a new list, which will store independently of the default today list.
 
 lodash is used to ensure can capitalisation does not matter on the new list item url.
+
+## Running a local version
+
+The project can be run locally by cloning to your machine in your usual place for projects. Run the following command to install
+
+        git clone https://github.com/popatre/todolist-mongodb.git
+
+Open the directory in your usual code editor.
+
+Run the following command to install the dependencies (this requires node v.14.15.0 or higher)
+
+        npm install
+
+You must also have MongoDB v4.2 or higher, installed, which can be installed by following the guide [here](https://docs.mongodb.com/manual/installation/)
+
+To run the project type the following command in the terminal
+
+        node app.js
+
+In your browser, navigate to http://localhost:3000 to view the project on the localserver
